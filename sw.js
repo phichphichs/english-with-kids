@@ -1,6 +1,6 @@
 // Service worker: ưu tiên mạng (luôn có bản mới), mất mạng thì dùng bản đã lưu.
 // Tăng số phiên bản khi muốn xoá cache cũ.
-const CACHE = "english-talk-v5";
+const CACHE = "english-talk-v6";
 const CORE = ["./", "index.html", "style.css", "app.js", "pron.js", "structures.js", "struct-1a.js", "struct-1b.js", "struct-2a.js", "struct-2b.js", "struct-3a.js", "struct-3b.js", "struct-4a.js", "struct-4b.js", "struct-5.js", "structures-index.js", "glossary.js", "glossary-index.js", "phrases.js", "dialogues.js", "audio-index.js",
   "work1.js", "work2.js", "work3.js", "work4.js", "manifest.webmanifest",
   "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png"];
