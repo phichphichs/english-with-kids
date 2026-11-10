@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nói tiếng Anh với con</title>
+<meta name="theme-color" content="#ff7a59">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="English Talk">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="icons/icon-192.png">
+<link rel="stylesheet" href="style.css?v=23">
+</head>
+<body>
+<header class="top">
+  <div class="wrap bar">
+    <h1 id="title">🧸 Nói tiếng Anh với con</h1>
+    <div class="tools">
+      <label class="who" id="whoLabel">Xưng:
+        <select id="who"><option value="mẹ">Mẹ</option><option value="bố">Bố</option></select>
+      </label>
+      <button id="theme" class="icon" title="Đổi sáng/tối" aria-label="Đổi sáng/tối">🌓</button>
+    </div>
+  </div>
+  <nav class="wrap tabs decks">
+    <button data-deck="kids">🧸 Nói với con</button>
+    <button data-deck="work">💼 Công sở IT</button>
+  </nav>
+  <nav class="wrap tabs">
+    <button data-tab="home" class="on">Chủ đề</button>
+    <button data-tab="flash">Thẻ lật</button>
+    <button data-tab="today">Hôm nay</button>
+    <button data-tab="dialog">Hội thoại</button>
+    <button data-tab="quiz">Luyện tập</button>
+    <button data-tab="learned">Đã học</button>
+    <button data-tab="notes">Sổ từ</button>
+  </nav>
+</header>
+
+<main class="wrap" id="app"></main>
+
+<script src="phrases.js?v=23"></script>
+<script src="work1.js?v=23"></script>
+<script src="work2.js?v=23"></script>
+<script src="work3.js?v=23"></script>
+<script src="work4.js?v=23"></script>
+<script src="pron.js?v=23"></script>
+<script src="structures.js?v=23"></script>
+<script src="struct-1a.js?v=23"></script>
+<script src="struct-1b.js?v=23"></script>
+<script src="struct-2a.js?v=23"></script>
+<script src="struct-2b.js?v=23"></script>
+<script src="struct-3a.js?v=23"></script>
+<script src="struct-3b.js?v=23"></script>
+<script src="struct-4a.js?v=23"></script>
+<script src="struct-4b.js?v=23"></script>
+<script src="struct-5.js?v=23"></script>
+<script src="structures-index.js?v=23"></script>
+<script src="glossary.js?v=23"></script>
+<script src="glossary-index.js?v=23"></script>
+<script src="dialogues.js?v=24"></script>
+<script src="audio-index.js?v=25"></script>
+<script src="app.js?v=25"></script>
+<script>
+  // Chạy offline khi mở qua HTTPS hoặc localhost (Safari trên iPhone cần HTTPS)
+  if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(function () {});
+</script>
+</body>
+</html>
